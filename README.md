@@ -10,14 +10,23 @@ The application supports two types of users — Recruiters who post jobs and rev
 
 ## Screenshots
 
+### Register Page
+![Register Page](screenshots/register.png)
+
 ### Login Page
 ![Login Page](screenshots/login.png)
+
+### Recruiter - Post Job
+![Post Job](screenshots/recruiter-postjob.png)
 
 ### Recruiter - My Jobs Dashboard
 ![My Jobs](screenshots/recruiter-myjobs.png)
 
 ### Recruiter - View Applicants with Match Scores
 ![Applicants](screenshots/recruiter-applicants.png)
+
+### Recruiter - All Applicants
+![All Applicants](screenshots/recruiter-allapplicants.png)
 
 ### Candidate - Browse Jobs
 ![Browse Jobs](screenshots/candidate-browsejobs.png)
@@ -32,12 +41,20 @@ The application supports two types of users — Recruiters who post jobs and rev
 
 ## Features
 
+### Authentication
+- Register a new account as either a Recruiter or a Candidate
+- Login with email and password
+- Secure JWT token-based authentication
+- Role-based access — Recruiters and Candidates see different menus and pages
+
 ### Recruiter
 - Register and login as a Recruiter
-- Post new job openings with required skills and experience
-- Edit and delete existing job postings
-- View all applicants for each job ranked by match score
-- Dashboard showing total jobs posted and total applicants
+- Post new job openings with job title, description, required experience and required skills
+- Edit existing job postings
+- Delete job postings
+- View all jobs posted by the recruiter with total jobs and total applicants count
+- View all applicants for each job ranked by AI match score
+- View all applicants across all jobs in one place
 
 ### Candidate
 - Register and login as a Candidate
@@ -47,13 +64,14 @@ The application supports two types of users — Recruiters who post jobs and rev
 - Apply to jobs with a single click
 - View AI-generated match score for every applied job
 - Track all applications with applied date and match percentage
+- View total applied jobs, strong matches and average match score on dashboard
 
 ### AI Matching Algorithm
-- Extracts text from the candidate's uploaded PDF resume
+- Extracts text from the candidate's uploaded PDF resume using Apache PDFBox
 - Tokenizes resume text and compares it against job required skills
 - Calculates a percentage match score based on matched skills
 - Saves the match score with each application record
-- Ranks candidates from highest to lowest match score
+- Ranks candidates from highest to lowest match score for the recruiter
 
 ---
 
@@ -112,7 +130,7 @@ Columns: id, candidate_id, job_id, match_score, applied_at
 ### Authentication
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| POST | /auth/register | Register a new user |
+| POST | /auth/register | Register a new user as Recruiter or Candidate |
 | POST | /auth/login | Login and receive JWT token |
 
 ### Jobs
@@ -120,16 +138,16 @@ Columns: id, candidate_id, job_id, match_score, applied_at
 |--------|----------|--------|-------------|
 | GET | /jobs | All users | Get all job postings |
 | GET | /jobs/my | Recruiter | Get jobs posted by this recruiter |
-| POST | /jobs/post | Recruiter | Create a new job |
+| POST | /jobs/post | Recruiter | Create a new job posting |
 | PUT | /jobs/update/{id} | Recruiter | Update an existing job |
-| DELETE | /jobs/delete/{id} | Recruiter | Delete a job |
+| DELETE | /jobs/delete/{id} | Recruiter | Delete a job posting |
 
 ### Applications
 | Method | Endpoint | Access | Description |
 |--------|----------|--------|-------------|
 | POST | /applications/apply?jobId= | Candidate | Apply to a job |
-| GET | /applications/my | Candidate | View my applications |
-| GET | /applications/job/{jobId} | Recruiter | View applicants for a job |
+| GET | /applications/my | Candidate | View my applications with scores |
+| GET | /applications/job/{jobId} | Recruiter | View all applicants for a job |
 
 ### Candidate Profile
 | Method | Endpoint | Access | Description |
@@ -195,9 +213,12 @@ ResumeMatcher/
 │   └── application.properties
 │
 ├── screenshots/
+│   ├── register.png
 │   ├── login.png
+│   ├── recruiter-postjob.png
 │   ├── recruiter-myjobs.png
 │   ├── recruiter-applicants.png
+│   ├── recruiter-allapplicants.png
 │   ├── candidate-browsejobs.png
 │   ├── candidate-myapplications.png
 │   └── candidate-profile.png
