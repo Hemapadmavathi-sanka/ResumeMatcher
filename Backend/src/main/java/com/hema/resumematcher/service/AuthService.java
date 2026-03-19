@@ -1,0 +1,129 @@
+package com.hema.resumematcher.service;
+
+import com.hema.resumematcher.config.JwtUtil;
+import com.hema.resumematcher.dto.AuthResponse;
+import com.hema.resumematcher.dto.LoginRequest;
+import com.hema.resumematcher.dto.RegisterRequest;
+import com.hema.resumematcher.entity.Role;
+import com.hema.resumematcher.entity.User;
+import com.hema.resumematcher.repository.UserRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+
+@Service
+@RequiredArgsConstructor   // ← Spring injects via constructor; NO more = null bug
+public class AuthService {
+
+    private final UserRepository userRepository;  // ✅ FIXED: no = null
+    private final PasswordEncoder passwordEncoder; // ✅ FIXED: no = null
+    private final JwtUtil jwtUtil;
+    private final EmailService emailService;
+
+    // ── Register ──────────────────────────────────────────────────────────────
+    public AuthResponse register(RegisterRequest request) {
+
+        // Check duplicate email
+        if (userRepository.existsByEmail(request.getEmail())) {
+            throw new RuntimeException("Email already registered: " + request.getEmail());
+        }
+
+        // Validate role
+        Role role;
+        try {
+            role = Role.valueOf(request.getRole().toUpperCase());
+        } catch (IllegalArgumentException e) {
+            throw new RuntimeException("Invalid role. Use: ADMIN, RECRUITER, or CANDIDATE");
+        }
+
+        String otp = String.format("%06d", new java.util.Random().nextInt(999999));
+
+        User user = User.builder()
+                .name(request.getName())
+                .email(request.getEmail())
+                .password(passwordEncoder.encode(request.getPassword()))
+                .role(role)
+                .otp(otp)
+                .isVerified(false)
+                .build();
+
+        userRepository.save(user);
+
+        emailService.sendVerificationOtp(user.getEmail(), otp);
+
+        return new AuthResponse(null, user.getRole().name(), "OTP sent to email. Please verify.");
+    }
+
+    // ── OTP Verification ──────────────────────────────────────────────────────
+    public AuthResponse verifyOtp(String email, String otp) {
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+
+        if (user.isVerified()) {
+            throw new RuntimeException("User is already verified");
+        }
+
+        if (!otp.equals(user.getOtp())) {
+            throw new RuntimeException("Invalid OTP");
+        }
+
+        user.setVerified(true);
+        user.setOtp(null); // Clear OTP after successful verification
+        userRepository.save(user);
+
+        String token = jwtUtil.generateToken(user.getEmail(), user.getRole().name());
+        return new AuthResponse(token, user.getRole().name(), "Verification successful");
+    }
+
+    // ── Login ─────────────────────────────────────────────────────────────────
+    public AuthResponse login(LoginRequest request) {
+
+        User user = userRepository.findByEmail(request.getEmail())
+                .orElseThrow(() -> new RuntimeException("User not found with email: " + request.getEmail()));
+
+        if (!user.isVerified()) {
+            throw new RuntimeException("Please verify your email before logging in.");
+        }
+
+        if (!passwordEncoder.matches(request.getPassword(), user.getPassword())) {
+            throw new RuntimeException("Invalid credentials");
+        }
+
+        String token = jwtUtil.generateToken(user.getEmail(), user.getRole().name());
+        return new AuthResponse(token, user.getRole().name(), "Login successful");
+    }
+
+    // ── Forgot Password ───────────────────────────────────────────────────────
+    public AuthResponse forgotPassword(String email) {
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new RuntimeException("User not found with email: " + email));
+
+        String otp = String.format("%06d", new java.util.Random().nextInt(999999));
+        user.setOtp(otp);
+        userRepository.save(user);
+
+        emailService.sendPasswordResetOtp(user.getEmail(), otp);
+        return new AuthResponse(null, null, "Password reset OTP sent to email.");
+    }
+
+    // ── Reset Password ────────────────────────────────────────────────────────
+    public AuthResponse resetPassword(String email, String otp, String newPassword) {
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+
+        if (user.getOtp() == null || !user.getOtp().equals(otp)) {
+            throw new RuntimeException("Invalid or expired OTP");
+        }
+
+        user.setPassword(passwordEncoder.encode(newPassword));
+        user.setOtp(null);
+        userRepository.save(user);
+
+        return new AuthResponse(null, null, "Password reset successful. Please login.");
+    }
+
+    public User getUserByEmail(String email) {
+        return userRepository.findByEmail(email)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+    }
+}

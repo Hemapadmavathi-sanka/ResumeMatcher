@@ -1,0 +1,524 @@
+﻿[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.hema:resumematcher >-----------------------
+[INFO] Building ResumeMatcher 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ resumematcher ---
+[INFO] Deleting C:\Users\Hema\Resume_Matcher_Project\Backend\target
+[INFO] 
+[INFO] >>> spring-boot:3.2.5:run (default-cli) > test-compile @ resumematcher >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ resumematcher ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ resumematcher ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 37 source files with javac [debug parameters release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ resumematcher ---
+[INFO] skip non existing resourceDirectory C:\Users\Hema\Resume_Matcher_Project\Backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ resumematcher ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\test-classes
+[INFO] 
+[INFO] <<< spring-boot:3.2.5:run (default-cli) < test-compile @ resumematcher <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.5:run (default-cli) @ resumematcher ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-03-13T23:29:09.491+05:30  INFO 7508 --- [           main] c.h.r.ResumeMatcherApplication           : Starting ResumeMatcherApplication using Java 24.0.2 with PID 7508 (C:\Users\Hema\Resume_Matcher_Project\Backend\target\classes started by Hema in C:\Users\Hema\Resume_Matcher_Project\Backend)
+2026-03-13T23:29:09.492+05:30 DEBUG 7508 --- [           main] c.h.r.ResumeMatcherApplication           : Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-03-13T23:29:09.493+05:30  INFO 7508 --- [           main] c.h.r.ResumeMatcherApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-03-13T23:29:10.674+05:30  INFO 7508 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-13T23:29:10.783+05:30  INFO 7508 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 5 JPA repository interfaces.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/Hema/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.20/tomcat-embed-core-10.1.20.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-03-13T23:29:11.491+05:30  INFO 7508 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-13T23:29:11.506+05:30  INFO 7508 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-13T23:29:11.506+05:30  INFO 7508 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-03-13T23:29:11.608+05:30  INFO 7508 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-13T23:29:11.608+05:30  INFO 7508 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2033 ms
+2026-03-13T23:29:11.776+05:30  INFO 7508 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-13T23:29:11.828+05:30  INFO 7508 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-13T23:29:11.863+05:30  INFO 7508 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-13T23:29:12.091+05:30  INFO 7508 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-13T23:29:12.119+05:30  INFO 7508 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-13T23:29:12.351+05:30  INFO 7508 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b332439
+2026-03-13T23:29:12.354+05:30  INFO 7508 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-13T23:29:12.406+05:30  WARN 7508 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-13T23:29:13.522+05:30  INFO 7508 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    alter table applications 
+       drop 
+       foreign key FKafjbp7mjswoqo9dnnt02cql97
+Hibernate: 
+    alter table applications 
+       drop 
+       foreign key FK65weib1lru9dkrbto5pv389vi
+Hibernate: 
+    alter table candidate_profiles 
+       drop 
+       foreign key FKn7b2se0y378uox9e3aw2bjg13
+Hibernate: 
+    alter table candidate_skills 
+       drop 
+       foreign key FK2fcvgl75ge1wjul9sq4e6aww3
+Hibernate: 
+    alter table candidate_skills 
+       drop 
+       foreign key FK13xo0mq175kdpsauy73xhhol2
+Hibernate: 
+    alter table job_skills 
+       drop 
+       foreign key FKe10ho7um0atjm67b9dgokmfyx
+Hibernate: 
+    alter table job_skills 
+       drop 
+       foreign key FK1gb74tysr9vkypwivvvovxq1f
+Hibernate: 
+    alter table jobs 
+       drop 
+       foreign key FK9syuy0yp9a2c0fkr98pvxpb8m
+Hibernate: 
+    drop table if exists applications
+Hibernate: 
+    drop table if exists candidate_profiles
+Hibernate: 
+    drop table if exists candidate_skills
+Hibernate: 
+    drop table if exists job_skills
+Hibernate: 
+    drop table if exists jobs
+Hibernate: 
+    drop table if exists skills
+Hibernate: 
+    drop table if exists users
+Hibernate: 
+    create table applications (
+        match_score float(53) not null,
+        applied_at datetime(6),
+        candidate_id bigint,
+        id bigint not null auto_increment,
+        job_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    create table candidate_profiles (
+        experience integer not null,
+        id bigint not null auto_increment,
+        user_id bigint,
+        education varchar(255),
+        resume_text LONGTEXT,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    create table candidate_skills (
+        candidate_id bigint not null,
+        skill_id bigint not null,
+        primary key (candidate_id, skill_id)
+    ) engine=InnoDB
+Hibernate: 
+    create table job_skills (
+        job_id bigint not null,
+        skill_id bigint not null,
+        primary key (job_id, skill_id)
+    ) engine=InnoDB
+Hibernate: 
+    create table jobs (
+        required_experience integer not null,
+        id bigint not null auto_increment,
+        posted_at datetime(6),
+        recruiter_id bigint,
+        description TEXT,
+        title varchar(255) not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    create table skills (
+        id bigint not null auto_increment,
+        name varchar(255) not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    create table users (
+        is_verified bit not null,
+        id bigint not null auto_increment,
+        email varchar(255) not null,
+        name varchar(255) not null,
+        otp varchar(255),
+        password varchar(255) not null,
+        role enum ('ADMIN','RECRUITER','CANDIDATE') not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    alter table applications 
+       add constraint UKkphvsdbcird8yi4ye3ip913d7 unique (candidate_id, job_id)
+Hibernate: 
+    alter table candidate_profiles 
+       add constraint UK_m7asead9kaplln9cdupjat1cq unique (user_id)
+Hibernate: 
+    alter table skills 
+       add constraint UK_85woe63nu9klkk9fa73vf0jd0 unique (name)
+Hibernate: 
+    alter table users 
+       add constraint UK_6dotkott2kjsp8vw4d0m25fb7 unique (email)
+Hibernate: 
+    alter table applications 
+       add constraint FKafjbp7mjswoqo9dnnt02cql97 
+       foreign key (candidate_id) 
+       references candidate_profiles (id)
+Hibernate: 
+    alter table applications 
+       add constraint FK65weib1lru9dkrbto5pv389vi 
+       foreign key (job_id) 
+       references jobs (id)
+Hibernate: 
+    alter table candidate_profiles 
+       add constraint FKn7b2se0y378uox9e3aw2bjg13 
+       foreign key (user_id) 
+       references users (id)
+Hibernate: 
+    alter table candidate_skills 
+       add constraint FK2fcvgl75ge1wjul9sq4e6aww3 
+       foreign key (skill_id) 
+       references skills (id)
+Hibernate: 
+    alter table candidate_skills 
+       add constraint FK13xo0mq175kdpsauy73xhhol2 
+       foreign key (candidate_id) 
+       references candidate_profiles (id)
+Hibernate: 
+    alter table job_skills 
+       add constraint FKe10ho7um0atjm67b9dgokmfyx 
+       foreign key (skill_id) 
+       references skills (id)
+Hibernate: 
+    alter table job_skills 
+       add constraint FK1gb74tysr9vkypwivvvovxq1f 
+       foreign key (job_id) 
+       references jobs (id)
+Hibernate: 
+    alter table jobs 
+       add constraint FK9syuy0yp9a2c0fkr98pvxpb8m 
+       foreign key (recruiter_id) 
+       references users (id)
+2026-03-13T23:29:14.870+05:30  INFO 7508 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T23:29:15.239+05:30 DEBUG 7508 --- [           main] c.h.resumematcher.config.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2026-03-13T23:29:15.593+05:30  WARN 7508 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-13T23:29:16.031+05:30  INFO 7508 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@30d944d8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c76b2fe, org.springframework.security.web.context.SecurityContextHolderFilter@7747571c, org.springframework.security.web.header.HeaderWriterFilter@6484364f, org.springframework.web.filter.CorsFilter@15c96f24, org.springframework.security.web.authentication.logout.LogoutFilter@3a1e5fa7, com.hema.resumematcher.config.JwtAuthFilter@7d4135c9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f67f5ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c80f8dd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7fa2473a, org.springframework.security.web.session.SessionManagementFilter@322593ed, org.springframework.security.web.access.ExceptionTranslationFilter@2c750b69, org.springframework.security.web.access.intercept.AuthorizationFilter@401d83ce]
+2026-03-13T23:29:16.338+05:30  INFO 7508 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-03-13T23:29:16.347+05:30  INFO 7508 --- [           main] c.h.r.ResumeMatcherApplication           : Started ResumeMatcherApplication in 7.322 seconds (process running for 7.704)
+2026-03-13T23:30:35.544+05:30  INFO 7508 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-13T23:30:35.551+05:30  INFO 7508 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-13T23:30:35.555+05:30  INFO 7508 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+    limit
+        ?
+Hibernate: 
+    insert 
+    into
+        users
+        (email, is_verified, name, otp, password, role) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-03-13T23:30:43.066+05:30  INFO 7508 --- [nio-8080-exec-5] c.h.resumematcher.service.EmailService   : OTP email sent successfully to Varshinisanka66@gmail.com
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    update
+        users 
+    set
+        email=?,
+        is_verified=?,
+        name=?,
+        otp=?,
+        password=?,
+        role=? 
+    where
+        id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.recruiter_id=? 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.recruiter_id=? 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.recruiter_id=? 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.recruiter_id=? 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.recruiter_id=? 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.recruiter_id=? 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?

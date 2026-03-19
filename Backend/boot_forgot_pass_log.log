@@ -1,0 +1,2509 @@
+﻿[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.hema:resumematcher >-----------------------
+[INFO] Building ResumeMatcher 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.5:run (default-cli) > test-compile @ resumematcher >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ resumematcher ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ resumematcher ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 39 source files with javac [debug parameters release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ resumematcher ---
+[INFO] skip non existing resourceDirectory C:\Users\Hema\Resume_Matcher_Project\Backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ resumematcher ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\test-classes
+[INFO] 
+[INFO] <<< spring-boot:3.2.5:run (default-cli) < test-compile @ resumematcher <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.5:run (default-cli) @ resumematcher ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-03-13T23:38:21.236+05:30  INFO 18504 --- [           main] c.h.r.ResumeMatcherApplication           : Starting ResumeMatcherApplication using Java 24.0.2 with PID 18504 (C:\Users\Hema\Resume_Matcher_Project\Backend\target\classes started by Hema in C:\Users\Hema\Resume_Matcher_Project\Backend)
+2026-03-13T23:38:21.238+05:30 DEBUG 18504 --- [           main] c.h.r.ResumeMatcherApplication           : Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-03-13T23:38:21.239+05:30  INFO 18504 --- [           main] c.h.r.ResumeMatcherApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-03-13T23:38:22.058+05:30  INFO 18504 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-13T23:38:22.147+05:30  INFO 18504 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 5 JPA repository interfaces.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/Hema/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.20/tomcat-embed-core-10.1.20.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-03-13T23:38:22.820+05:30  INFO 18504 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-13T23:38:22.842+05:30  INFO 18504 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-13T23:38:22.842+05:30  INFO 18504 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-03-13T23:38:22.899+05:30  INFO 18504 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-13T23:38:22.900+05:30  INFO 18504 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1608 ms
+2026-03-13T23:38:23.088+05:30  INFO 18504 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-13T23:38:23.141+05:30  INFO 18504 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-13T23:38:23.177+05:30  INFO 18504 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-13T23:38:23.413+05:30  INFO 18504 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-13T23:38:23.441+05:30  INFO 18504 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-13T23:38:23.637+05:30  INFO 18504 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d4fb0d8
+2026-03-13T23:38:23.639+05:30  INFO 18504 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-13T23:38:23.686+05:30  WARN 18504 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-13T23:38:24.796+05:30  INFO 18504 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-13T23:38:24.970+05:30  INFO 18504 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T23:38:25.325+05:30 DEBUG 18504 --- [           main] c.h.resumematcher.config.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2026-03-13T23:38:25.575+05:30  WARN 18504 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-13T23:38:25.943+05:30  INFO 18504 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@11a0c708, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30bfdcc5, org.springframework.security.web.context.SecurityContextHolderFilter@178c4480, org.springframework.security.web.header.HeaderWriterFilter@6b247ef6, org.springframework.web.filter.CorsFilter@608c7b5b, org.springframework.security.web.authentication.logout.LogoutFilter@4e3c0627, com.hema.resumematcher.config.JwtAuthFilter@18adc20a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40da1644, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5980e29f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e9b0c92, org.springframework.security.web.session.SessionManagementFilter@1a82453, org.springframework.security.web.access.ExceptionTranslationFilter@638e8194, org.springframework.security.web.access.intercept.AuthorizationFilter@784c74e]
+2026-03-13T23:38:26.236+05:30  INFO 18504 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-03-13T23:38:26.244+05:30  INFO 18504 --- [           main] c.h.r.ResumeMatcherApplication           : Started ResumeMatcherApplication in 5.567 seconds (process running for 6.947)
+2026-03-13T23:39:25.707+05:30  INFO 18504 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-13T23:39:25.707+05:30  INFO 18504 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-13T23:39:25.707+05:30  INFO 18504 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.recruiter_id=? 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.recruiter_id=? 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    update
+        users 
+    set
+        email=?,
+        is_verified=?,
+        name=?,
+        otp=?,
+        password=?,
+        role=? 
+    where
+        id=?
+2026-03-13T23:40:03.600+05:30  INFO 18504 --- [nio-8080-exec-6] c.h.resumematcher.service.EmailService   : Email sent successfully to Varshinisanka66@gmail.com
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    update
+        users 
+    set
+        email=?,
+        is_verified=?,
+        name=?,
+        otp=?,
+        password=?,
+        role=? 
+    where
+        id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.recruiter_id=? 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.recruiter_id=? 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.recruiter_id=? 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.recruiter_id=? 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.recruiter_id=? 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.recruiter_id=? 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        skills
+        (name) 
+    values
+        (?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        skills
+        (name) 
+    values
+        (?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        skills
+        (name) 
+    values
+        (?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        skills
+        (name) 
+    values
+        (?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        skills
+        (name) 
+    values
+        (?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        skills
+        (name) 
+    values
+        (?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        skills
+        (name) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        jobs
+        (description, posted_at, recruiter_id, required_experience, title) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.recruiter_id=? 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.recruiter_id=? 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        r1_0.id,
+        r1_0.email,
+        r1_0.is_verified,
+        r1_0.name,
+        r1_0.otp,
+        r1_0.password,
+        r1_0.role,
+        j1_0.required_experience,
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name,
+        j1_0.title 
+    from
+        jobs j1_0 
+    left join
+        users r1_0 
+            on r1_0.id=j1_0.recruiter_id 
+    left join
+        job_skills rs1_0 
+            on j1_0.id=rs1_0.job_id 
+    left join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        j1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.applied_at,
+        a1_0.candidate_id,
+        a1_0.job_id,
+        a1_0.match_score 
+    from
+        applications a1_0 
+    where
+        a1_0.job_id=? 
+    order by
+        a1_0.match_score desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        r1_0.id,
+        r1_0.email,
+        r1_0.is_verified,
+        r1_0.name,
+        r1_0.otp,
+        r1_0.password,
+        r1_0.role,
+        j1_0.required_experience,
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name,
+        j1_0.title 
+    from
+        jobs j1_0 
+    left join
+        users r1_0 
+            on r1_0.id=j1_0.recruiter_id 
+    left join
+        job_skills rs1_0 
+            on j1_0.id=rs1_0.job_id 
+    left join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        j1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.applied_at,
+        a1_0.candidate_id,
+        a1_0.job_id,
+        a1_0.match_score 
+    from
+        applications a1_0 
+    where
+        a1_0.job_id=? 
+    order by
+        a1_0.match_score desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        skills
+        (name) 
+    values
+        (?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        skills
+        (name) 
+    values
+        (?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        skills
+        (name) 
+    values
+        (?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        skills
+        (name) 
+    values
+        (?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        skills
+        (name) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        jobs
+        (description, posted_at, recruiter_id, required_experience, title) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        skills
+        (name) 
+    values
+        (?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        skills
+        (name) 
+    values
+        (?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        skills
+        (name) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        jobs
+        (description, posted_at, recruiter_id, required_experience, title) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        skills
+        (name) 
+    values
+        (?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        skills
+        (name) 
+    values
+        (?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        jobs
+        (description, posted_at, recruiter_id, required_experience, title) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        skills
+        (name) 
+    values
+        (?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        skills
+        (name) 
+    values
+        (?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        upper(s1_0.name)=upper(?)
+Hibernate: 
+    insert 
+    into
+        jobs
+        (description, posted_at, recruiter_id, required_experience, title) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        job_skills
+        (job_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.recruiter_id=? 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    where
+        j1_0.recruiter_id=? 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        r1_0.id,
+        r1_0.email,
+        r1_0.is_verified,
+        r1_0.name,
+        r1_0.otp,
+        r1_0.password,
+        r1_0.role,
+        j1_0.required_experience,
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name,
+        j1_0.title 
+    from
+        jobs j1_0 
+    left join
+        users r1_0 
+            on r1_0.id=j1_0.recruiter_id 
+    left join
+        job_skills rs1_0 
+            on j1_0.id=rs1_0.job_id 
+    left join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        j1_0.id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.applied_at,
+        a1_0.candidate_id,
+        a1_0.job_id,
+        a1_0.match_score 
+    from
+        applications a1_0 
+    where
+        a1_0.job_id=? 
+    order by
+        a1_0.match_score desc
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        r1_0.id,
+        r1_0.email,
+        r1_0.is_verified,
+        r1_0.name,
+        r1_0.otp,
+        r1_0.password,
+        r1_0.role,
+        j1_0.required_experience,
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name,
+        j1_0.title 
+    from
+        jobs j1_0 
+    left join
+        users r1_0 
+            on r1_0.id=j1_0.recruiter_id 
+    left join
+        job_skills rs1_0 
+            on j1_0.id=rs1_0.job_id 
+    left join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        j1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.applied_at,
+        a1_0.candidate_id,
+        a1_0.job_id,
+        a1_0.match_score 
+    from
+        applications a1_0 
+    where
+        a1_0.job_id=? 
+    order by
+        a1_0.match_score desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        r1_0.id,
+        r1_0.email,
+        r1_0.is_verified,
+        r1_0.name,
+        r1_0.otp,
+        r1_0.password,
+        r1_0.role,
+        j1_0.required_experience,
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name,
+        j1_0.title 
+    from
+        jobs j1_0 
+    left join
+        users r1_0 
+            on r1_0.id=j1_0.recruiter_id 
+    left join
+        job_skills rs1_0 
+            on j1_0.id=rs1_0.job_id 
+    left join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        j1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.applied_at,
+        a1_0.candidate_id,
+        a1_0.job_id,
+        a1_0.match_score 
+    from
+        applications a1_0 
+    where
+        a1_0.job_id=? 
+    order by
+        a1_0.match_score desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        r1_0.id,
+        r1_0.email,
+        r1_0.is_verified,
+        r1_0.name,
+        r1_0.otp,
+        r1_0.password,
+        r1_0.role,
+        j1_0.required_experience,
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name,
+        j1_0.title 
+    from
+        jobs j1_0 
+    left join
+        users r1_0 
+            on r1_0.id=j1_0.recruiter_id 
+    left join
+        job_skills rs1_0 
+            on j1_0.id=rs1_0.job_id 
+    left join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        j1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.applied_at,
+        a1_0.candidate_id,
+        a1_0.job_id,
+        a1_0.match_score 
+    from
+        applications a1_0 
+    where
+        a1_0.job_id=? 
+    order by
+        a1_0.match_score desc
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+    limit
+        ?
+Hibernate: 
+    insert 
+    into
+        users
+        (email, is_verified, name, otp, password, role) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-03-13T23:55:30.001+05:30  INFO 18504 --- [nio-8080-exec-9] c.h.resumematcher.service.EmailService   : Email sent successfully to hemapadmavathi.ai@gmail.com
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    update
+        users 
+    set
+        email=?,
+        is_verified=?,
+        name=?,
+        otp=?,
+        password=?,
+        role=? 
+    where
+        id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.description,
+        j1_0.posted_at,
+        j1_0.recruiter_id,
+        j1_0.required_experience,
+        j1_0.title 
+    from
+        jobs j1_0 
+    order by
+        j1_0.id desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_verified,
+        u1_0.name,
+        u1_0.otp,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.job_id,
+        rs1_1.id,
+        rs1_1.name 
+    from
+        job_skills rs1_0 
+    join
+        skills rs1_1 
+            on rs1_1.id=rs1_0.skill_id 
+    where
+        rs1_0.job_id=?

@@ -1,0 +1,357 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.hema:resumematcher >-----------------------
+[INFO] Building ResumeMatcher 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ resumematcher ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ resumematcher ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 35 source files with javac [debug release 17] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/controller/ApplicationController.java:[19,38] variable applicationService not initialized in the default constructor
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/ApplicationService.java:[50,46] cannot find symbol
+  symbol:   method builder()
+  location: class com.hema.resumematcher.entity.Application
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/ApplicationService.java:[53,35] cannot find symbol
+  symbol:   method getMatchScore()
+  location: variable result of type com.hema.resumematcher.dto.MatchResult
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[39,52] cannot find symbol
+  symbol:   method getSkills()
+  location: variable candidate of type com.hema.resumematcher.entity.CandidateProfile
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[43,45] cannot find symbol
+  symbol:   method getRequiredSkills()
+  location: variable job of type com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[60,31] cannot find symbol
+  symbol:   method getRequiredExperience()
+  location: variable job of type com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[61,51] cannot find symbol
+  symbol:   method getExperience()
+  location: variable candidate of type com.hema.resumematcher.entity.CandidateProfile
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[61,73] cannot find symbol
+  symbol:   method getRequiredExperience()
+  location: variable job of type com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[66,22] cannot find symbol
+  symbol:   method getResumeText()
+  location: variable candidate of type com.hema.resumematcher.entity.CandidateProfile
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[66,60] cannot find symbol
+  symbol:   method getResumeText()
+  location: variable candidate of type com.hema.resumematcher.entity.CandidateProfile
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[67,23] cannot find symbol
+  symbol:   method getDescription()
+  location: variable job of type com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[67,56] cannot find symbol
+  symbol:   method getDescription()
+  location: variable job of type com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[68,59] cannot find symbol
+  symbol:   method getResumeText()
+  location: variable candidate of type com.hema.resumematcher.entity.CandidateProfile
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[68,80] cannot find symbol
+  symbol:   method getDescription()
+  location: variable job of type com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[77,20] cannot find symbol
+  symbol:   method getTitle()
+  location: variable job of type com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[76,20] cannot find symbol
+  symbol:   method getId()
+  location: variable job of type com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[26,49] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.hema.resumematcher.dto.RegisterRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[27,78] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.hema.resumematcher.dto.RegisterRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[33,40] cannot find symbol
+  symbol:   method getRole()
+  location: variable request of type com.hema.resumematcher.dto.RegisterRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[38,25] cannot find symbol
+  symbol:   method builder()
+  location: class com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[39,30] cannot find symbol
+  symbol:   method getName()
+  location: variable request of type com.hema.resumematcher.dto.RegisterRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[40,31] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.hema.resumematcher.dto.RegisterRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[41,57] cannot find symbol
+  symbol:   method getPassword()
+  location: variable request of type com.hema.resumematcher.dto.RegisterRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[47,50] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[47,67] cannot find symbol
+  symbol:   method getRole()
+  location: variable user of type com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[48,44] cannot find symbol
+  symbol:   method getRole()
+  location: variable user of type com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[54,55] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.hema.resumematcher.dto.LoginRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[55,96] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.hema.resumematcher.dto.LoginRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[57,45] cannot find symbol
+  symbol:   method getPassword()
+  location: variable request of type com.hema.resumematcher.dto.LoginRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[57,65] cannot find symbol
+  symbol:   method getPassword()
+  location: variable user of type com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[61,50] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[61,67] cannot find symbol
+  symbol:   method getRole()
+  location: variable user of type com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[62,44] cannot find symbol
+  symbol:   method getRole()
+  location: variable user of type com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[34,63] cannot find symbol
+  symbol:   method getSkillNames()
+  location: variable request of type com.hema.resumematcher.dto.JobRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[36,22] cannot find symbol
+  symbol:   method builder()
+  location: class com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[37,31] cannot find symbol
+  symbol:   method getTitle()
+  location: variable request of type com.hema.resumematcher.dto.JobRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[38,37] cannot find symbol
+  symbol:   method getDescription()
+  location: variable request of type com.hema.resumematcher.dto.JobRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[39,44] cannot find symbol
+  symbol:   method getRequiredExperience()
+  location: variable request of type com.hema.resumematcher.dto.JobRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[52,63] cannot find symbol
+  symbol:   method getSkillNames()
+  location: variable request of type com.hema.resumematcher.dto.JobRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[53,29] cannot find symbol
+  symbol:   method getTitle()
+  location: variable request of type com.hema.resumematcher.dto.JobRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[54,35] cannot find symbol
+  symbol:   method getDescription()
+  location: variable request of type com.hema.resumematcher.dto.JobRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[55,42] cannot find symbol
+  symbol:   method getRequiredExperience()
+  location: variable request of type com.hema.resumematcher.dto.JobRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[56,12] cannot find symbol
+  symbol:   method setRequiredSkills(java.util.Set<com.hema.resumematcher.entity.Skill>)
+  location: variable job of type com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[106,17] cannot find symbol
+  symbol:   method getRecruiter()
+  location: variable job of type com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/SkillService.java:[35,42] cannot find symbol
+  symbol:   method builder()
+  location: class com.hema.resumematcher.entity.Skill
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/CandidateProfileService.java:[27,63] cannot find symbol
+  symbol:   method getSkillNames()
+  location: variable request of type com.hema.resumematcher.dto.CandidateProfileRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/CandidateProfileService.java:[30,41] cannot find symbol
+  symbol:   method builder()
+  location: class com.hema.resumematcher.entity.CandidateProfile
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/CandidateProfileService.java:[32,37] cannot find symbol
+  symbol:   method getEducation()
+  location: variable request of type com.hema.resumematcher.dto.CandidateProfileRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/CandidateProfileService.java:[33,38] cannot find symbol
+  symbol:   method getExperience()
+  location: variable request of type com.hema.resumematcher.dto.CandidateProfileRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/CandidateProfileService.java:[34,38] cannot find symbol
+  symbol:   method getResumeText()
+  location: variable request of type com.hema.resumematcher.dto.CandidateProfileRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/CandidateProfileService.java:[35,16] cannot find symbol
+  symbol:   method setSkills(java.util.Set<com.hema.resumematcher.entity.Skill>)
+  location: variable profile of type com.hema.resumematcher.entity.CandidateProfile
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/config/UserDetailsServiceConfig.java:[20,43] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/config/UserDetailsServiceConfig.java:[21,39] cannot find symbol
+  symbol:   method getPassword()
+  location: variable user of type com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/config/UserDetailsServiceConfig.java:[22,36] cannot find symbol
+  symbol:   method getRole()
+  location: variable user of type com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/config/UserDetailsServiceConfig.java:[24,29] incompatible types: bad return type in lambda expression
+    no instance(s) of type variable(s) X exist so that java.lang.Object conforms to org.springframework.security.core.userdetails.UserDetails
+[INFO] 55 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.974 s
+[INFO] Finished at: 2026-03-12T19:22:23+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project resumematcher: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/controller/ApplicationController.java:[19,38] variable applicationService not initialized in the default constructor
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/ApplicationService.java:[50,46] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.hema.resumematcher.entity.Application
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/ApplicationService.java:[53,35] cannot find symbol
+[ERROR]   symbol:   method getMatchScore()
+[ERROR]   location: variable result of type com.hema.resumematcher.dto.MatchResult
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[39,52] cannot find symbol
+[ERROR]   symbol:   method getSkills()
+[ERROR]   location: variable candidate of type com.hema.resumematcher.entity.CandidateProfile
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[43,45] cannot find symbol
+[ERROR]   symbol:   method getRequiredSkills()
+[ERROR]   location: variable job of type com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[60,31] cannot find symbol
+[ERROR]   symbol:   method getRequiredExperience()
+[ERROR]   location: variable job of type com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[61,51] cannot find symbol
+[ERROR]   symbol:   method getExperience()
+[ERROR]   location: variable candidate of type com.hema.resumematcher.entity.CandidateProfile
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[61,73] cannot find symbol
+[ERROR]   symbol:   method getRequiredExperience()
+[ERROR]   location: variable job of type com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[66,22] cannot find symbol
+[ERROR]   symbol:   method getResumeText()
+[ERROR]   location: variable candidate of type com.hema.resumematcher.entity.CandidateProfile
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[66,60] cannot find symbol
+[ERROR]   symbol:   method getResumeText()
+[ERROR]   location: variable candidate of type com.hema.resumematcher.entity.CandidateProfile
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[67,23] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable job of type com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[67,56] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable job of type com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[68,59] cannot find symbol
+[ERROR]   symbol:   method getResumeText()
+[ERROR]   location: variable candidate of type com.hema.resumematcher.entity.CandidateProfile
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[68,80] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable job of type com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[77,20] cannot find symbol
+[ERROR]   symbol:   method getTitle()
+[ERROR]   location: variable job of type com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/MatchingService.java:[76,20] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable job of type com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[26,49] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.RegisterRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[27,78] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.RegisterRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[33,40] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.RegisterRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[38,25] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[39,30] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.RegisterRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[40,31] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.RegisterRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[41,57] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.RegisterRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[47,50] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[47,67] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[48,44] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[54,55] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.LoginRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[55,96] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.LoginRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[57,45] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.LoginRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[57,65] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable user of type com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[61,50] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[61,67] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/AuthService.java:[62,44] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[34,63] cannot find symbol
+[ERROR]   symbol:   method getSkillNames()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.JobRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[36,22] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[37,31] cannot find symbol
+[ERROR]   symbol:   method getTitle()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.JobRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[38,37] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.JobRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[39,44] cannot find symbol
+[ERROR]   symbol:   method getRequiredExperience()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.JobRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[52,63] cannot find symbol
+[ERROR]   symbol:   method getSkillNames()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.JobRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[53,29] cannot find symbol
+[ERROR]   symbol:   method getTitle()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.JobRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[54,35] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.JobRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[55,42] cannot find symbol
+[ERROR]   symbol:   method getRequiredExperience()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.JobRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[56,12] cannot find symbol
+[ERROR]   symbol:   method setRequiredSkills(java.util.Set<com.hema.resumematcher.entity.Skill>)
+[ERROR]   location: variable job of type com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/JobService.java:[106,17] cannot find symbol
+[ERROR]   symbol:   method getRecruiter()
+[ERROR]   location: variable job of type com.hema.resumematcher.entity.Job
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/SkillService.java:[35,42] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.hema.resumematcher.entity.Skill
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/CandidateProfileService.java:[27,63] cannot find symbol
+[ERROR]   symbol:   method getSkillNames()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.CandidateProfileRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/CandidateProfileService.java:[30,41] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.hema.resumematcher.entity.CandidateProfile
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/CandidateProfileService.java:[32,37] cannot find symbol
+[ERROR]   symbol:   method getEducation()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.CandidateProfileRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/CandidateProfileService.java:[33,38] cannot find symbol
+[ERROR]   symbol:   method getExperience()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.CandidateProfileRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/CandidateProfileService.java:[34,38] cannot find symbol
+[ERROR]   symbol:   method getResumeText()
+[ERROR]   location: variable request of type com.hema.resumematcher.dto.CandidateProfileRequest
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/service/CandidateProfileService.java:[35,16] cannot find symbol
+[ERROR]   symbol:   method setSkills(java.util.Set<com.hema.resumematcher.entity.Skill>)
+[ERROR]   location: variable profile of type com.hema.resumematcher.entity.CandidateProfile
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/config/UserDetailsServiceConfig.java:[20,43] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/config/UserDetailsServiceConfig.java:[21,39] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable user of type com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/config/UserDetailsServiceConfig.java:[22,36] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.hema.resumematcher.entity.User
+[ERROR] /C:/Users/Hema/Resume_Matcher_Project/Backend/src/main/java/com/hema/resumematcher/config/UserDetailsServiceConfig.java:[24,29] incompatible types: bad return type in lambda expression
+[ERROR]     no instance(s) of type variable(s) X exist so that java.lang.Object conforms to org.springframework.security.core.userdetails.UserDetails
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
